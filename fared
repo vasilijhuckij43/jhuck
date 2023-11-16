@@ -1,0 +1,9 @@
+import asyncio
+from utils.helpers import get_chain_prices
+from utils.files import read_txt, load_json
+    
+max_time_check_tx_status = 100
+WALLETS = read_txt("data/wallets.txt")
+PROXIES = read_txt("data/proxies.txt")
+STARKNET_KEYS = read_txt("data/starknet_keys.txt")
+STARKNET_ADDRESSES = read_txt("data/starknet_addresses.txt")
